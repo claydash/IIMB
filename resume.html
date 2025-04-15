@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Special+Gothic:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Special+Gothic+Expanded+One:regular" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="profile-container">
+                <div class="profile-image-wrapper">
+                    <img src="pexels-photo-771742.webp" alt="My Profile" class="profile-image">
+                    <div class="profile-shimmer"></div>
+                </div>
+            </div>
+            <div class="header-content">
+                <h1>ARUDRA RAO GHILDIYAL</h1>
+                <h2>Student at IIM Bangalore, CFA L1 Aspirant</h2>
+                <p>Finance enthusiast with an entrepreneurial mindset and a deep curiosity for markets, strategy, and innovation. Passionate about building ventures and mastering investment frameworks to make high-impact decisions in the world of business.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/arudraraoghildiyal/" title="LinkedIn" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href=title="GitHub" class="social-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:arudra.ghildiyal@iimb.ac.in" title="Email" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="shimmer-line"></div>
+            <p>I'm a finance-driven individual with a strong interest in markets, strategic thinking, and startup ecosystems. Studying at IIM Bangalore, I’m combining academic insights with real-world exposure to build a future at the intersection of finance and innovation.
+               With a long-term vision of entering the investment and alternative finance space, I'm also exploring entrepreneurial projects to understand consumer behavior, market dynamics, and digital business models. My goal is to contribute meaningfully to businesses that challenge the status quo and scale sustainably.</p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & <span class="highlight">Expertise</span></h2>
+            <div class="shimmer-line"></div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <ul class="skill-list">
+                        <li>Financial Modeling</li>
+                        <li>Web Development</li>
+                        <li>Basic Python & SQL</li>
+                        <li>Bloomberg Terminal</li>
+                        <li>Equity & Bond Analysis</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>Leadership</li>
+                        <li>Critical Thinking</li>
+                        <li>Teamwork</li>
+                        <li>Problem Solving</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Software</h3>
+                    <ul class="skill-list">
+                        <li>Figma</li>
+                        <li>Canva</li>
+                        <li>Notion</li>
+                        <li>Google Workspace</li>
+                        <li>Excel & PowerPoint</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="education">
+        <div class="container">
+            <h2 class="section-title"><span class="highlight">Education</span></h2>
+            <div class="shimmer-line"></div>
+            
+            <div class="education-item">
+                <div class="education-date">2024–2027</div>
+                <h3 class="education-degree">BBA in Digital Business and Entrepreneurship</h3>
+                <div class="education-school">Indian Institute of Management Bangalore</div>
+                <p>Founding Cohort</p>
+            </div>
+
+            <div class="education-item">
+                <div class="education-date">2025 (Expected)</div>
+                <h3 class="education-degree">CFA Level 1 Candidate</h3>
+                <div class="education-school">CFA Institute</div>
+                <p>Registered for October 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Arudra Ghildiyal. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add interactive effects
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effect to skill categories
+            const skillCategories = document.querySelectorAll('.skill-category');
+            skillCategories.forEach(category => {
+                category.addEventListener('mouseenter', function() {
+                    this.classList.add('active');
+                });
+                category.addEventListener('mouseleave', function() {
+                    this.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+<link rel="stylesheet" href="style.css">
