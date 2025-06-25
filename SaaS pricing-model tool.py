@@ -34,31 +34,7 @@ with open(os.path.join(project_dir, "requirements.txt"), "w") as f:
 
 # Create initial Dockerfile
 dockerfile_content = """
-# Use an official Python runtime as a parent image
-FROM python:3.9-slim
 
-# Set the working directory in the container
-WORKDIR /app
-
-# Copy the requirements file into the container
-COPY requirements.txt .
-
-# Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy the rest of the application code
-COPY . .
-
-# Make port 5000 available to the world outside this container
-EXPOSE 5000
-
-# Define environment variable
-ENV FLASK_APP=api/app.py # Update this based on your entry point
-
-# Run the Flask development server by default
-#CMD ["flask", "run", "--host", "0.0.0.0"]
-# Use gunicorn for production
-CMD ["gunicorn", "-w", "4", "-b", "0.0.0.0:5000", "api.app:app"] # Update this based on your entry point
 """
 with open(os.path.join(project_dir, "Dockerfile"), "w") as f:
     f.write(dockerfile_content)
