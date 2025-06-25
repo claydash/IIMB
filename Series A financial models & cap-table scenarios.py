@@ -28,24 +28,7 @@ Implement logic to calculate the 24-month revenue forecast.
 Implement the logic to calculate the 24-month revenue forecast based on the provided instructions.
 """
 
-# 1. Create a list to store the monthly revenue forecast
-revenue_forecast = []
 
-# 2. Initialize the first month's revenue
-revenue_forecast.append(starting_revenue)
-
-# Calculate starting users from starting revenue and ARPU
-starting_users = starting_revenue / arpu
-projected_users = starting_users
-
-# 3. Iterate through the subsequent 23 months
-for month in range(1, 24):
-    # 4. Calculate the projected users for the current month
-    projected_users = projected_users * (1 + monthly_growth_rate) * (1 - churn_rate)
-    # 5. Calculate the revenue for the current month
-    current_month_revenue = projected_users * arpu
-    # 6. Append the calculated monthly revenue to the forecast list
-    revenue_forecast.append(current_month_revenue)
 
 print("24-Month Revenue Forecast:")
 print(revenue_forecast)
@@ -56,30 +39,7 @@ The previous code block failed because the variables `starting_revenue`, `monthl
 
 """
 
-# Revenue Forecast Inputs (re-defining as they were lost)
-starting_revenue = 10000  # Initial monthly revenue
-monthly_growth_rate = 0.05  # 5% monthly revenue growth
-churn_rate = 0.02  # 2% monthly churn rate
-arpu = 50  # Average Revenue Per User
 
-# 1. Create a list to store the monthly revenue forecast
-revenue_forecast = []
-
-# 2. Initialize the first month's revenue
-revenue_forecast.append(starting_revenue)
-
-# Calculate starting users from starting revenue and ARPU
-starting_users = starting_revenue / arpu
-projected_users = starting_users
-
-# 3. Iterate through the subsequent 23 months
-for month in range(1, 24):
-    # 4. Calculate the projected users for the current month
-    projected_users = projected_users * (1 + monthly_growth_rate) * (1 - churn_rate)
-    # 5. Calculate the revenue for the current month
-    current_month_revenue = projected_users * arpu
-    # 6. Append the calculated monthly revenue to the forecast list
-    revenue_forecast.append(current_month_revenue)
 
 print("24-Month Revenue Forecast:")
 print(revenue_forecast)
