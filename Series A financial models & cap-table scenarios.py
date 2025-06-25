@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+
 
 Install necessary libraries like pandas and plotly.
 
@@ -6,7 +6,6 @@ Install necessary libraries like pandas and plotly.
 The subtask requires installing the pandas and plotly libraries. I will use pip to install both libraries in a single code block.
 """
 
-# Commented out IPython magic to ensure Python compatibility.
 # %pip install pandas plotly
 
 """## Revenue forecast module
