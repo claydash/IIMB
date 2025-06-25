@@ -1,9 +1,5 @@
 
 
-Install necessary libraries like pandas and plotly.
-
-**Reasoning**:
-The subtask requires installing the pandas and plotly libraries. I will use pip to install both libraries in a single code block.
 """
 
 # %pip install pandas plotly
