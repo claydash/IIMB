@@ -1611,7 +1611,7 @@ fig.show()
 *   The Term Sheet Comparison module allows defining multiple offer scenarios with valuation and round size inputs, calculates the post-money valuation, new investor percentage, and founder post-money percentage for each, and provides a side-by-side Plotly bar chart for visual comparison.
 *   All modules were successfully integrated into a single Colab-ready notebook with clear sections, editable inputs, and visual outputs.
 
-## Insights or Next Steps
+
 
 *   The current Cap Table Simulator assumes a notional pre-money share price ($1) to derive share counts. A next step could be to allow the user to input an actual current total share count or a known pre-money share price for greater accuracy if that data is available.
 *   While the Term Sheet Comparison calculates founder percentage post-money based on pre-money percentage and dilution, it doesn't fully integrate the ESOP pool expansion logic specific to each offer scenario. A potential enhancement is to calculate the full post-money cap table *for each offer* to get a more precise breakdown, including the ESOP impact per offer.
